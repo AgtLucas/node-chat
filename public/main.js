@@ -243,7 +243,7 @@ $(function() {
 
   // Whenever the server emits 'user joined', log it in the chat body
   socket.on('user joined', function (data) {
-    log(data.username + ' joined');
+    log(data.username + ' acabou de entrar no chat!');
     addParticipantsMessage(data);
   });
 
