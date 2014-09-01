@@ -28,9 +28,9 @@ $(function() {
   function addParticipantsMessage (data) {
     var message = '';
     if (data.numUsers === 1) {
-      message += "there's 1 participant";
+      message += "1 usuário(a) online!";
     } else {
-      message += "there're " + data.numUsers + " participants";
+      message += data.numUsers + " usuários(as) online!";
     }
     log(message);
   }
@@ -229,7 +229,7 @@ $(function() {
   socket.on('login', function (data) {
     connected = true;
     // Display the welcome message
-    var message = "Welcome to Socket.IO Chat &mdash; ";
+    var message = "Chat BSI";
     log(message, {
       prepend: true
     });
@@ -249,7 +249,7 @@ $(function() {
 
   // Whenever the server emits 'user left', log it in the chat body
   socket.on('user left', function (data) {
-    log(data.username + ' left');
+    log(data.username + ' saiu correndo!');
     addParticipantsMessage(data);
     removeChatTyping(data);
   });
