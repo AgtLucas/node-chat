@@ -47,7 +47,7 @@ ul {
 /* Login Page */
 
 .login.page {
-  background-color: #000;
+  background-color: #08c;
 }
 
 .login.page .form {
@@ -136,7 +136,7 @@ ul {
 /* Input */
 
 .inputMessage {
-  border: 10px solid #000;
+  border: 10px solid #08c;
   bottom: 0;
   height: 60px;
   left: 0;
